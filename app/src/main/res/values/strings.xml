@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">cocktails</string>
+
+    <string name="splash_screen_text">Welcome to my app!</string>
+
+    <string name="ordinary_drink_text">Ordinary Drink</string>
+    <string name="cocktail_text">Cocktail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="details_ingredients_text">Ingredients:</string>
+    <string name="details_btn_back">Back</string>
+
 </resources>
