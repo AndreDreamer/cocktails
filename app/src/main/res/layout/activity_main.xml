@@ -25,14 +25,10 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="com.example.cocktails.OrdinaryDrinkFragment"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/tabs_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        tools:layout="@layout/fragment_ordinary_drink" />
-
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
