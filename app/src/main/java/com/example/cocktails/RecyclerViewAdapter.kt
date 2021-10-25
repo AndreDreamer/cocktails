@@ -26,7 +26,7 @@ class RecyclerViewAdapter(private val drinks: List<Drink>) :
     override fun getItemCount() = drinks.size
 
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v), View.OnClickListener {
-
+        val DRINK_KEY = "DRINK_KEY"
         private var view: View = v
         private var drink: Drink? = null
         lateinit var titleTextView: TextView
@@ -47,9 +47,11 @@ class RecyclerViewAdapter(private val drinks: List<Drink>) :
             titleTextView.text = drink.name
 
         }
+
         override fun onClick(v: View?) {
             val context = itemView.context
             val myIntent = Intent(context, DetailsActivity::class.java)
+            myIntent.putExtra(DRINK_KEY, drink?.id)
             context.startActivity(myIntent)
         }
 
