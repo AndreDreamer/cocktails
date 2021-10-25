@@ -2,18 +2,9 @@ package com.example.cocktails
 
 
 import android.os.Bundle
-import android.util.Log
-import androidx.core.view.get
 import androidx.fragment.app.FragmentActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cocktails.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
 
 class MainActivity : FragmentActivity() {
 

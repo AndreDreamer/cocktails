@@ -8,8 +8,6 @@ import android.widget.*
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kotlin.coroutines.coroutineContext
-
 
 class RecyclerViewAdapter(private val drinks: List<Drink>) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
