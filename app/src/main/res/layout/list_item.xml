@@ -6,8 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="5dp"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
+    android:background="@drawable/rounded_background"
     android:orientation="horizontal">
 
 
@@ -15,6 +17,7 @@
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_margin="10dp"
         android:adjustViewBounds="true"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -22,7 +25,9 @@
         android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background" />
 </LinearLayout>
 
