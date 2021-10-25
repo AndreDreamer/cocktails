@@ -4,11 +4,12 @@ import com.google.gson.annotations.SerializedName
 
 data class Drink(
     @SerializedName("idDrink") val id: Long,
-    @SerializedName("strDrink") val name: String
+    @SerializedName("strDrink") val name: String,
+    @SerializedName("strDrinkThumb") val image: String
 
 )
 
-data class DrinkList (
+data class DrinkList(
     @SerializedName("drinks")
-    val group: List<Drink>
+    val drinks: List<Drink>
 )
