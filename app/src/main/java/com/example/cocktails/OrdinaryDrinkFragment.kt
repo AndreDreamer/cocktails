@@ -36,7 +36,7 @@ class OrdinaryDrinkFragment : Fragment() {
         with(binding) {
             refreshLayout.setOnRefreshListener {
                 // Initialize a new Runnable
-                var runnable = Runnable {
+                Runnable {
                     val retrofit: Retrofit = Retrofit.Builder()
                         .baseUrl(BASE_URL)
                         .addConverterFactory(GsonConverterFactory.create())
@@ -53,7 +53,7 @@ class OrdinaryDrinkFragment : Fragment() {
                                 t.toString(),
                                 Toast.LENGTH_SHORT
                             ).show()
-                            refreshLayout.isRefreshing = false;
+                            refreshLayout.isRefreshing = false
                         }
 
                         override fun onResponse(
@@ -68,7 +68,7 @@ class OrdinaryDrinkFragment : Fragment() {
                             } else {
                                 Log.d("Log:", "response code " + response.code())
                             }
-                            refreshLayout.isRefreshing = false;
+                            refreshLayout.isRefreshing = false
                         }
 
 
@@ -76,11 +76,5 @@ class OrdinaryDrinkFragment : Fragment() {
                 }.run()
             }
         }
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = OrdinaryDrinkFragment()
-
     }
 }

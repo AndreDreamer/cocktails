@@ -42,7 +42,7 @@ class RecyclerViewAdapter(private val drinks: List<Drink>) :
             image = view.findViewById(R.id.imageView3)
             Picasso.with(titleTextView.context)
                 .load(drink.image)
-                .into(image);
+                .into(image)
 
             titleTextView.text = drink.name
 
@@ -50,7 +50,6 @@ class RecyclerViewAdapter(private val drinks: List<Drink>) :
         override fun onClick(v: View?) {
             val context = itemView.context
             val myIntent = Intent(context, DetailsActivity::class.java)
-         //   myIntent.putExtra(NOTE_KEY, adapterPosition)
             context.startActivity(myIntent)
         }
 

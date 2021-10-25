@@ -8,9 +8,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : FragmentActivity() {
 
-
-
-
     private val numberOfTabs = 2
     private lateinit var binding: ActivityMainBinding
 
