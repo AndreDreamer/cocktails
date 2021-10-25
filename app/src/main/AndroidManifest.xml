@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cocktails">
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="user"
             android:windowSoftInputMode="stateAlwaysVisible">
 
         </activity>
         <activity
-            android:name=".activity.DetailsActivity"
+            android:name=".DetailsActivity"
             android:screenOrientation="user"
             android:windowSoftInputMode="stateAlwaysVisible">
 
