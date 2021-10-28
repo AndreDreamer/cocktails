@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">cocktails</string>
+
+    <string name="splash_screen_text">Welcome to my app!</string>
+
+    <string name="ordinary_drink_text">Ordinary Drink</string>
+    <string name="cocktail_text">Cocktail</string>
+
+    <string name="details_btn_back">Back</string>
+    <string name="instruction">Instruction</string>
+
 </resources>
